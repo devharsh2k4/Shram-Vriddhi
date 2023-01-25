@@ -1,8 +1,6 @@
 # Smart India Hackathon 2022 Winner✨✨🎇🥇
 An all in one app for withdrawal /advance from their PF contribution
-it is a solution for workers who keeps registering grieveances seeking advice on filling claims. The app 
-will have an inbuilt voice assistance which will guide the labour among all the process till the form filliing
-for claim is completed
+it is a solution for workers who keeps registering grieveances seeking advice on filling claims.
 
 
 ![450d2207-6e37-49ef-86d7-d090e31e0348](https://user-images.githubusercontent.com/103301856/214682431-b8acb1f2-7635-4f57-b80e-f99b74dfc353.jpg)
