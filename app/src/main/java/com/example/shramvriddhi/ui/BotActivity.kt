@@ -13,7 +13,8 @@ class BotActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityBotBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        val view = binding.root
+        setContentView(view)
         val myWebView: WebView = findViewById(R.id.webView)
         val webSettings = myWebView.settings
         webSettings.javaScriptEnabled = true

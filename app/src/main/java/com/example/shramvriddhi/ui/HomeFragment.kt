@@ -13,7 +13,7 @@ import com.example.shramvriddhi.data.DykDataSource
 import com.example.shramvriddhi.databinding.FragmentHomeBinding
 
 
-class HomeFragment : Fragment(R.layout.fragment_home){
+class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private var _binding: FragmentHomeBinding? = null
 
@@ -31,7 +31,7 @@ class HomeFragment : Fragment(R.layout.fragment_home){
         val myDataset = DykDataSource().loadDyk()
         val recyclerView = binding.recyclerViewHome
 
-        recyclerView.adapter = dykAdapter(this@HomeFragment.requireContext(),myDataset)
+        recyclerView.adapter = dykAdapter(this@HomeFragment.requireContext(), myDataset)
         recyclerView.setHasFixedSize(true)
 
         return binding.root
@@ -40,25 +40,22 @@ class HomeFragment : Fragment(R.layout.fragment_home){
     }
 
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
 
-            binding.btn23.setOnClickListener{
-                Intent(this@HomeFragment.requireContext(), BotActivity::class.java).also{
-                    startActivity(it)
-                }
-            }
 
-        binding.button2.setOnClickListener {
-            Intent(this@HomeFragment.requireContext(),LocationActivity::class.java).also {
+        binding.floatingActionButton.setOnClickListener {
+            Intent(this@HomeFragment.requireContext(), BotActivity::class.java).also {
                 startActivity(it)
             }
         }
 
-
-
+            binding.button2.setOnClickListener {
+                Intent(this@HomeFragment.requireContext(), LocationActivity::class.java).also {
+                    startActivity(it)
+                }
+            }
 
 
 //             binding.ivHome7.setOnClickListener{
@@ -74,40 +71,36 @@ class HomeFragment : Fragment(R.layout.fragment_home){
 //             }
 
 
+            val images = listOf(
+                R.drawable.bannerfirst,
+                R.drawable.bannersecond,
+                R.drawable.bannerthird,
+                R.drawable.bannerfourth,
+                R.drawable.bannerfifth,
+                R.drawable.bannersixth,
+                R.drawable.bannerseventh,
+                R.drawable.bannereigth,
+                R.drawable.bannerninth,
+                R.drawable.bannertenth,
+                R.drawable.bannereleventhj
+            )
 
 
-        val images = listOf(
-            R.drawable.bannerfirst,
-            R.drawable.bannersecond,
-            R.drawable.bannerthird,
-            R.drawable.bannerfourth,
-            R.drawable.bannerfifth,
-            R.drawable.bannersixth,
-            R.drawable.bannerseventh,
-            R.drawable.bannereigth,
-            R.drawable.bannerninth,
-            R.drawable.bannertenth,
-            R.drawable.bannereleventhj
-        )
-
-
-        val adapter =  ViewPagerAdapter(images)
-        binding.bannerPager.adapter= adapter
+            val adapter = ViewPagerAdapter(images)
+            binding.bannerPager.adapter = adapter
 
 
 
 
-       binding.bannerPager.beginFakeDrag()
-        binding.bannerPager.fakeDragBy(-6f)
-        binding.bannerPager.endFakeDrag()
+            binding.bannerPager.beginFakeDrag()
+            binding.bannerPager.fakeDragBy(-6f)
+            binding.bannerPager.endFakeDrag()
 
-    }
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
-
-
+        }
+        override fun onDestroyView() {
+            super.onDestroyView()
+            _binding = null
+        }
 
 
     }

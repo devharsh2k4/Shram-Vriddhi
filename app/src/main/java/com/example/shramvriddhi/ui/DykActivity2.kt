@@ -10,7 +10,8 @@ class DykActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDykActicvity2Binding.inflate(layoutInflater)
-        setContentView(binding.root)
+        val view = binding.root
+        setContentView(view)
 
 
         binding.ivDyk2Cancel.setOnClickListener {

@@ -224,7 +224,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="left"
-        android:text="Contact details"
+        android:text="Help Centres"
         android:textAllCaps="true"
         android:textSize="24sp"
         android:textStyle="bold"

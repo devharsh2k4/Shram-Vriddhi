@@ -40,19 +40,24 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
 
 
         binding.textView69.setOnClickListener{
-             val i = Intent(this@ProfileFragment.requireContext(), ModifyBasicDetails::class.java).also {
+             Intent(this@ProfileFragment.requireContext(), ModifyBasicDetails::class.java).also {
                  startActivity(it)
              }
         }
 
         binding.textView71.setOnClickListener{
-            val j = Intent(this@ProfileFragment.requireContext(), KycActivity::class.java).also{
+             Intent(this@ProfileFragment.requireContext(), KycActivity::class.java).also{
                 startActivity(it)
             }
         }
 
         binding.textView77.setOnClickListener{
-            val k = Intent(this@ProfileFragment.requireContext(), MarkExit::class.java).also{
+             Intent(this@ProfileFragment.requireContext(), MarkExit::class.java).also{
+                startActivity(it)
+            }
+        }
+        binding.textView74.setOnClickListener {
+            Intent(this@ProfileFragment.requireContext(),LocationActivity::class.java).also{
                 startActivity(it)
             }
         }
