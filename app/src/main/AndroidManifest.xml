@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -13,125 +14,128 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ShramVriddhi"
-        tools:targetApi="31" >
+        tools:targetApi="31">
         <activity
-            android:name=".MarkExit"
-            android:exported="false" >
+            android:name=".ui.BotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MarkExit"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".RaiseClaim2"
-            android:exported="false" >
+            android:name=".ui.RaiseClaim2"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".RaiseClaim"
-            android:exported="false" >
+            android:name=".ui.RaiseClaim"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".KycActivity"
-            android:exported="false" >
+            android:name=".ui.KycActivity"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ModifyBasicDetailsDone"
+            android:name=".ui.ModifyBasicDetailsDone"
             android:exported="false"
             android:label="@string/title_activity_modify_basic_details_done"
-            android:theme="@style/Theme.ShramVriddhi.NoActionBar" >
+            android:theme="@style/Theme.ShramVriddhi.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ModifyBasicDetails"
-            android:exported="false" >
+            android:name=".ui.ModifyBasicDetails"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ClaimStatus"
-            android:exported="false" >
+            android:name=".ui.ClaimStatus"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".PassbookActivity3"
-            android:exported="false" >
+            android:name=".ui.PassbookActivity3"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".PassbookActivity2"
-            android:exported="false" >
+            android:name=".ui.PassbookActivity2"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".DykActicvity2"
-            android:exported="false" >
+            android:name=".ui.DykActicvity2"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".DykActivity1"
-            android:exported="false" >
+            android:name=".ui.DykActivity1"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".OtpActivity"
-            android:exported="false" >
+            android:name=".ui.OtpActivity"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".RegisterActivity2"
-            android:exported="false" >
+            android:name=".ui.RegisterActivity2"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".LoginActivity2"
-            android:exported="false" >
+            android:name=".ui.LoginActivity2"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".RegisterActivity"
-            android:exported="false" >
+            android:name=".ui.RegisterActivity"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".LoginActivity"
-            android:exported="false" >
+            android:name=".ui.LoginActivity"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".ui.SplashScreenActivity"
             android:exported="true"
-            android:theme="@style/Theme.Splash" >
+            android:theme="@style/Theme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -143,8 +147,8 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="true" >
+            android:name=".ui.MainActivity"
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
