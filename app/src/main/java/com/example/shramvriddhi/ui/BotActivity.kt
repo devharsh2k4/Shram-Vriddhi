@@ -17,6 +17,6 @@ class BotActivity : AppCompatActivity() {
         val myWebView: WebView = findViewById(R.id.webView)
         val webSettings = myWebView.settings
         webSettings.javaScriptEnabled = true
-        myWebView.loadUrl("https://siddharth3008.github.io/ChatBot/")
+        myWebView.loadUrl("https://siddharth3008.github.io/ChatBot1/")
     }
 }

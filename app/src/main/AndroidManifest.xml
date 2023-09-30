@@ -15,6 +15,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShramVriddhi"
         tools:targetApi="31">
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_api" />
+
+        <activity
+            android:name=".ui.HelpCentreLocateActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.FabActivity"
             android:exported="false" />
@@ -87,7 +96,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.DykActicvity2"
+            android:name=".ui.DykActivity2"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -151,7 +160,7 @@
         </activity>
         <activity
             android:name=".ui.MainActivity"
-            android:exported="true">
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

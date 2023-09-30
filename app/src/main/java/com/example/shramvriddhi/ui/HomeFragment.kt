@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.shramvriddhi.R
-import com.example.shramvriddhi.ViewPagerAdapter
+import com.example.shramvriddhi.adapter.ViewPagerAdapter
 import com.example.shramvriddhi.adapter.dykAdapter
 import com.example.shramvriddhi.data.DykDataSource
 import com.example.shramvriddhi.databinding.FragmentHomeBinding
@@ -50,6 +50,12 @@ class HomeFragment : Fragment(R.layout.fragment_home){
                     startActivity(it)
                 }
             }
+
+        binding.button2.setOnClickListener {
+            Intent(this@HomeFragment.requireContext(),HelpCentreLocateActivity::class.java).also {
+                startActivity(it)
+            }
+        }
 
 
 
