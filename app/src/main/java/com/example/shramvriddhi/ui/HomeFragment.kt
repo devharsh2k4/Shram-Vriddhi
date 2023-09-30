@@ -52,7 +52,7 @@ class HomeFragment : Fragment(R.layout.fragment_home){
             }
 
         binding.button2.setOnClickListener {
-            Intent(this@HomeFragment.requireContext(),HelpCentreLocateActivity::class.java).also {
+            Intent(this@HomeFragment.requireContext(),LocationActivity::class.java).also {
                 startActivity(it)
             }
         }

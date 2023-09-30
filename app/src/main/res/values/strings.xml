@@ -38,7 +38,7 @@
 
         <item>Retirement </item>
         <item>Death in service,</item>
-        <item>Permant Disablement</item>
+        <item>Permanent Disablement</item>
         <item> Cessation</item>
         <item> Death </item>
 
@@ -53,14 +53,15 @@
     <string name="previous">Previous</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="lineone">  Please note that the date of exit entered by you will be displayed to the Employer and in case you are still in employment then at the time of filing of the remittances for a period after the date of exit will be shown to the employer.(ECR Module)</string>
-    <string name="linetwo"> Please note that the date of exit entered by you will be displayed to the Employer and in case you are still in employment then at the time of filing of the remittances for a period after the date of exit will be shown to the employer(ECR Module)</string>
+    <string name="hello_second_fragment">Hello second fragment</string>
+    <string name="lineone">  Please note that the date of exit entered by you will be displayed to the Employer and in case you are still in employment then at the time of filing of the remittances for a period after the date of exit will be shown to the employer</string>
+    <string name="linetwo"> Please note that the date of exit entered by you will be displayed to the Employer and in case you are still in employment then at the time of filing of the remittances for a period after the date of exit will be shown to the employer</string>
     <string name="linethree"> Date of exit can be the month for which the last contribution has been received. In case the employer has defaulted in payment and your date of exit is a later date then you have to approach the employer for updating of date.</string>
-    <string name="linefour">The date entered is non editable and in case you have entered a wrong date erroneously then it can be corrected only by the concerned field office of EPFO on the basis of a written request of the employer to the office. The date of exit however cannot be edited after the settlement has been taken.</string>
-    <string name="linefive"> In case you have entered the date of exit and withdrawn the amount, then the service length under the Scheme(s) will lapse and on any subsequent employment the service length will start afresh for any eligibility for pension and advances.r</string>
-    <string name="dyk1">Do you know - COVID Advance even after leaving service</string>
-    <string name="dyk2">EDLI Amendment - Assistance to Family and Dependents of EPF Members</string>
+    <string name="linefour">The date entered is non editable and in case you have entered a wrong date erroneously then it can be corrected only by the concerned field office of EPFO on the basis of a written request of the employer to the office. The date of exit however cannot be edited after the settlement has been taken</string>
+    <string name="linefive"> In case you have entered the date of exit and withdrawn the amount, then the service length under the Scheme will lapse and on any subsequent employment the service length will start afresh for any eligibility for pension and advances</string>
+    <string name="dyk1">Do you know  COVID Advance even after leaving service</string>
+    <string name="dyk2">EDLI Amendment Assistance to Family and Dependents of EPF Members</string>
 
     <string name="google_map_api">AIzaSyBUtQdcBIQXQStrCCgmhFagJmsdMXanRTs</string>
+    <string name="location">Location</string>
 </resources>
